@@ -1,8 +1,7 @@
 package shadok.test;
 
 import shadok.NumberInShadok;
-import org.junit.Test;
-import static junit.framework.TestCase.assertEquals;
+import org.junit.*;
 
 public class TestNumberInShadok {
     /*
@@ -14,42 +13,39 @@ public class TestNumberInShadok {
 
     @Test
     public void ZeroShouldBeGA(){
-        assertEquals(NumberInShadok.shadok(0), "GA");
+        Assert.assertEquals(NumberInShadok.shadok(0), "GA");
     }
-
     @Test
-    public void OneShouldBeBU(){
-        assertEquals(NumberInShadok.shadok(1), "BU");
+    public void OneShouldBeBU() {
+        Assert.assertEquals(NumberInShadok.shadok(1), "BU");
     }
-
     @Test
-    public void TwoShouldBeZO(){
-        assertEquals(NumberInShadok.shadok(2), "ZO");
+    public void TwoShouldBeZO() {
+        Assert.assertEquals(NumberInShadok.shadok(2), "ZO");
     }
-
     @Test
-    public void ThreeShouldBeMEU(){
-        assertEquals(NumberInShadok.shadok(3), "MEU");
+    public void ThreeShouldBeMEU() {
+        Assert.assertEquals(NumberInShadok.shadok(3), "MEU");
     }
-
     @Test
-    public void FourShouldBeBUGA(){
-        assertEquals(NumberInShadok.shadok(4), "BUGA");
+    public void FourShouldBeBUGA() {
+        Assert.assertEquals(NumberInShadok.shadok(4), "BUGA");
     }
-
     @Test
-    public void FiveShouldBeBUBU(){
-        assertEquals(NumberInShadok.shadok(5), "BUBU");
+    public void FiveShouldBeBUBU() {
+        Assert.assertEquals(NumberInShadok.shadok(5), "BUBU");
     }
-
     @Test
-    public void EightShouldBeBUBU(){
-        assertEquals(NumberInShadok.shadok(8), "ZOGA");
+    public void EightShouldBeBUBU() throws Exception {
+        Assert.assertEquals(NumberInShadok.shadok(8), "ZOGA");
     }
-
     @Test
-    public void SixteenShouldBeBUGAGA(){
-        assertEquals(NumberInShadok.shadok(16), "BUGAGA");
+    public void SixteenShouldBeBUGAGA() throws Exception {
+        Assert.assertEquals(NumberInShadok.shadok(16), "BUGAGA");
+    }
+    @Test
+    public void SixtyFourShouldBeBUGAGA() throws Exception {
+        Assert.assertEquals(NumberInShadok.shadok(64), "BUGAGAGA");
     }
 
 }
