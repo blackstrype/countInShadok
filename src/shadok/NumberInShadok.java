@@ -11,7 +11,7 @@ public class NumberInShadok {
     public static String shadok(int nb){
         String result = "";
         if (nb > 3){
-            result = number[nb/4] + number[nb%4];
+            result = shadok(nb/4) + number[nb%4];
         } else {
             result = number[nb];
         }

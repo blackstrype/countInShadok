@@ -6,11 +6,10 @@ import static junit.framework.TestCase.assertEquals;
 
 public class TestNumberInShadok {
     /*
-     0 = GA
-     1 = BU
-     2 = ZO
-     3 = MEU
-     4 = BUGA
+     0 = GA     4 = BUGA    8  = ZOGA   12 = MEUGA      16 = BUGAGA
+     1 = BU     5 = BUBU    9  = ZOBU   13 = MEUBU      17 = BUGABU
+     2 = ZO     6 = BUZO    10 = ZOZO   14 = MEUZO      18 = BUGAZO
+     3 = MEU    7 = BUMEU   11 = ZOMEU  15 = MEUMEU     19 = BUGAMEU
     */
 
     @Test
@@ -36,6 +35,21 @@ public class TestNumberInShadok {
     @Test
     public void FourShouldBeBUGA(){
         assertEquals(NumberInShadok.shadok(4), "BUGA");
+    }
+
+    @Test
+    public void FiveShouldBeBUBU(){
+        assertEquals(NumberInShadok.shadok(5), "BUBU");
+    }
+
+    @Test
+    public void EightShouldBeBUBU(){
+        assertEquals(NumberInShadok.shadok(8), "ZOGA");
+    }
+
+    @Test
+    public void SixteenShouldBeBUGAGA(){
+        assertEquals(NumberInShadok.shadok(16), "BUGAGA");
     }
 
 }
