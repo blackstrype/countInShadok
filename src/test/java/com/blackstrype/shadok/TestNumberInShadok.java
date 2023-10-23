@@ -1,7 +1,7 @@
-package shadok.test;
+package com.blackstrype.shadok;
 
-import shadok.NumberInShadok;
-import org.junit.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestNumberInShadok {
     /*
@@ -13,39 +13,39 @@ public class TestNumberInShadok {
 
     @Test
     public void ZeroShouldBeGA(){
-        Assert.assertEquals(NumberInShadok.shadok(0), "GA");
+        Assertions.assertEquals(NumberInShadok.shadok(0), "GA");
     }
     @Test
     public void OneShouldBeBU() {
-        Assert.assertEquals(NumberInShadok.shadok(1), "BU");
+        Assertions.assertEquals(NumberInShadok.shadok(1), "BU");
     }
     @Test
     public void TwoShouldBeZO() {
-        Assert.assertEquals(NumberInShadok.shadok(2), "ZO");
+        Assertions.assertEquals(NumberInShadok.shadok(2), "ZO");
     }
     @Test
     public void ThreeShouldBeMEU() {
-        Assert.assertEquals(NumberInShadok.shadok(3), "MEU");
+        Assertions.assertEquals(NumberInShadok.shadok(3), "MEU");
     }
     @Test
     public void FourShouldBeBUGA() {
-        Assert.assertEquals(NumberInShadok.shadok(4), "BUGA");
+        Assertions.assertEquals(NumberInShadok.shadok(4), "BUGA");
     }
     @Test
     public void FiveShouldBeBUBU() {
-        Assert.assertEquals(NumberInShadok.shadok(5), "BUBU");
+        Assertions.assertEquals(NumberInShadok.shadok(5), "BUBU");
     }
     @Test
     public void EightShouldBeBUBU() throws Exception {
-        Assert.assertEquals(NumberInShadok.shadok(8), "ZOGA");
+        Assertions.assertEquals(NumberInShadok.shadok(8), "ZOGA");
     }
     @Test
     public void SixteenShouldBeBUGAGA() throws Exception {
-        Assert.assertEquals(NumberInShadok.shadok(16), "BUGAGA");
+        Assertions.assertEquals(NumberInShadok.shadok(16), "BUGAGA");
     }
     @Test
     public void SixtyFourShouldBeBUGAGA() throws Exception {
-        Assert.assertEquals(NumberInShadok.shadok(64), "BUGAGAGA");
+        Assertions.assertEquals(NumberInShadok.shadok(64), "BUGAGAGA");
     }
 
 }
