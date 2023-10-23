@@ -36,7 +36,7 @@ public class TestNumberInShadok {
         Assertions.assertEquals(NumberInShadok.shadok(5), "BUBU");
     }
     @Test
-    public void EightShouldBeBUBU() throws Exception {
+    public void EightShouldBeZOGA() throws Exception {
         Assertions.assertEquals(NumberInShadok.shadok(8), "ZOGA");
     }
     @Test
